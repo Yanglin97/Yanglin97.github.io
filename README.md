@@ -1,3 +1,7 @@
 # Yanglin Hu's Homepage
 
-This is Yanglin Hu
+Yanglin Hu
+
+Post-doctoral Fellow in the University of Hong Kong
+
+PhD 09.2021 --- 12.2025
