@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <meta name="description" content="Personal website" />
+  <style>
+    :root { --max: 860px; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    header {
+      border-bottom: 1px solid #eee;
+      padding: 28px 16px;
+    }
+    main { max-width: var(--max); margin: 0 auto; padding: 24px 16px 56px; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    h1 { margin: 0 0 6px; font-size: 2rem; }
+    .subtitle { margin: 0; color: #555; }
+    nav a { margin-right: 14px; text-decoration: none; color: #0b57d0; }
+    nav a:hover { text-decoration: underline; }
+    section { margin-top: 28px; }
+    .card {
+      border: 1px solid #eee; border-radius: 12px; padding: 14px 16px; margin: 12px 0;
+      background: #fafafa;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      padding: 18px 16px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .small { font-size: 0.95rem; color: #444; }
+    code { background: #f4f4f4; padding: 0.15rem 0.3rem; border-radius: 6px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Your Name</h1>
+      <p class="subtitle">Short tagline — e.g., PhD student in quantum information</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <!-- Add a CV PDF later: <a href="cv.pdf">CV</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Write a short bio here. Keep it 3–6 sentences. Mention your interests and affiliation.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="card">
+        <strong>Topic A</strong>
+        <div class="small">1–2 lines describing what you work on and why it matters.</div>
+      </div>
+      <div class="card">
+        <strong>Topic B</strong>
+        <div class="small">Another brief description.</div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol>
+        <li>
+          Paper title. <em>Venue</em>, year.
+          <a href="#">PDF</a> · <a href="#">arXiv</a>
+        </li>
+        <li>
+          Another paper. <em>Venue</em>, year.
+          <a href="#">PDF</a> · <a href="#">arXiv</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:you@example.com">you@example.com</a><br/>
+        GitHub: <a href="https://github.com/yourusername">yourusername</a><br/>
+        Google Scholar: <a href="#">link</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Your Name · Built with plain HTML on GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
